@@ -21,7 +21,7 @@ unit_user = "root"
 work_dir = Dir.pwd
 exec_start = "#{File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['ruby_install_name'])} #{Dir.pwd}/pp_watchdog.rb"
 
-template = File.read("service/service.erb")
+template = File.read("service/Service.erb")
 File.open("/etc/systemd/system/palpal.service", 'w') do |f|
     f.write ERB.new(template).result(binding)
     puts "Wrote /etc/systemd/system/palpal.service"
