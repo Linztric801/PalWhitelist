@@ -1,0 +1,18 @@
+---
+  RconPort: 227017
+  RconPassword: "Test123"
+  WatchdogInterval: 5
+  JoinBroadcast: true
+  LeaveBroadcast: true
+  # Whitelist Configuration
+  Whitelist:
+    Enable: false
+    RetroactiveKick: false
+    # SteamID
+    SteamIDs:
+      - "SteamID"
+      - "SteamID"
+    # PlayerUID
+    PlayerUIDs:
+      - "PlayerUID"
+
